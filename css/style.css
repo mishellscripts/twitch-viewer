@@ -1,0 +1,150 @@
+#title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+#name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+#status {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  
+}
+
+#toggle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.credits {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+/**.circle {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #FFEB3B;
+  z-index: 9;
+  position: relative;
+  top: -13px;
+  left: 2px;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
+.switch {
+  background-color: #FFFFFF;
+  border-color: #616161;
+  border-width: 3px;
+  border-style: solid;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  
+}**/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  top: 10px;
+  left: 20px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FFEB3B;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(35px);
+  -ms-transform: translateX(35px);
+  transform: translateX(35px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**.bar {
+  background-color: #BDBDBD;
+   width: 65px;
+  height: 15px;
+  position: relative;
+  top: 10px;
+  border-radius: 5px;
+  left: 4px;
+  z-index: 1;
+}**/
+
+.offline #channel{
+  background: #EEEEEE;
+  margin: 20px;
+}
+
+.online #channel {
+  background: #FFEB3B;
+  margin: 20px;
+}
+
+#channel li {
+  display: inline;
+  padding: 20px;
+  max-width: 10px;
+}
+
+#channel img {
+  border-radius: 60%;
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  max-width: 100px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+}
+
+#channel:hover {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
