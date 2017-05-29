@@ -2,7 +2,7 @@ var channels = ["lilypichu", "freecodecamp", "storbeck", "terakilobyte", "habath
 
 function addEverything(arr) {
   channels.forEach(function(channel) {
-    var url = 'https://api.twitch.tv/kraken/channels/' + channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
+     var url = 'https://api.twitch.tv/kraken/channels/' + channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
 
     $.ajax({
       type: "GET",
@@ -17,7 +17,7 @@ function addEverything(arr) {
           var api = data._links.channel;
           $.ajax({
             type: "GET",
-            url: api,
+            url: url,
             async: false,
             dataType: "json",
             success: function(info) {
