@@ -1,8 +1,8 @@
-var channels = ["lilypichu", "freecodecamp", "storbeck", "terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff","brunofin","comster404","test_channel","cretetion","sheevergaming","TR7K","OgamingSC2","ESL_SC2"];
+var channels = ["tsm_theoddone", "lilypichu", "freecodecamp", "Faker", "C9Sneaky", "Voyboy","Enluna","pokimane","noobs2ninjas","beohoff","kireiautumn","cretetion","sheevergaming","TR7K","OgamingSC2","ESL_SC2"];
 
 function addEverything(arr) {
   channels.forEach(function(channel) {
-    var url = 'https://wind-bow.gomix.me/twitch-api/' + 'streams' + '/' + channel + '?callback=?';
+     var url = 'https://api.twitch.tv/kraken/streams/' + channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
 
     $.ajax({
       type: "GET",
@@ -14,7 +14,7 @@ function addEverything(arr) {
           var channelName = "";
           var logo = "";
           var link = "";
-          var api = data._links.channel;
+          var api = data._links.channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
           $.ajax({
             type: "GET",
             url: api,
