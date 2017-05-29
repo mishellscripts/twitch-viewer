@@ -2,7 +2,7 @@ var channels = ["lilypichu", "freecodecamp", "storbeck", "terakilobyte", "habath
 
 function addEverything(arr) {
   channels.forEach(function(channel) {
-    var url = 'https://api.twitch.tv/kraken/users/44322889?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp' + '/' + channel + '?callback=?';
+    var url = 'https://api.twitch.tv/kraken/channels/' + channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
 
     $.ajax({
       type: "GET",
