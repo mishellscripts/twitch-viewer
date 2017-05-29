@@ -1,3 +1,4 @@
+
 var channels = ["tsm_theoddone", "lilypichu", "freecodecamp", "Faker", "C9Sneaky", "Voyboy","Enluna","pokimane","noobs2ninjas","beohoff","kireiautumn","cretetion","sheevergaming","TR7K","OgamingSC2","ESL_SC2"];
 
 function addEverything(arr) {
@@ -17,7 +18,7 @@ function addEverything(arr) {
           var api = data._links.channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
           $.ajax({
             type: "GET",
-            url: api,
+            url: url,
             async: false,
             dataType: "json",
             success: function(info) {
