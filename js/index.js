@@ -18,7 +18,7 @@ function addEverything(arr) {
           var api = data._links.channel + '?client_id=wg9ntlik7glwmyc5ule75t7elxyvdp';
           $.ajax({
             type: "GET",
-            url: url,
+            url: api,
             async: false,
             dataType: "json",
             success: function(info) {
